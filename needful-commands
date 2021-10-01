@@ -1,0 +1,10 @@
+rasa train
+
+train a model with specific domaoin yml file
+- rasa train --domain /home/mukesh/dev/shopnow-rasa-chatbot/domain.yml
+
+rasa shell
+
+open a new terminal2
+
+rasa run actions

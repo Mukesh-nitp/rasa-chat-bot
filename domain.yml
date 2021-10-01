@@ -1,0 +1,42 @@
+version: "2.0"
+
+intents:
+  - greet
+  - request_init
+  - order_pizza
+  - confirm
+
+entities:
+  - pizza_amount
+  - pizza_size
+  - pizza_type
+
+slots:
+  pizza_size:
+    type: list
+    influence_conversation: true/false
+  pizza_type:
+    type: list
+    influence_conversation: true/false
+  pizza_amount:
+    type: list
+    influence_conversation: true/false
+
+actions:
+- action_pizza_order_form
+
+#forms:
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_pizza_menu:
+  - text: "Yes Sir, We have Greek pizza, and New Yok-Style Pizza available in all different sizes i.e small, medium, large."
+
+  utter_confirm:
+  - text: "Sure!! We are delivering your order ASAP. Have a nice day :)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
