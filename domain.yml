@@ -14,13 +14,13 @@ entities:
 slots:
   pizza_size:
     type: list
-    influence_conversation: true/false
+    influence_conversation: false
   pizza_type:
     type: list
-    influence_conversation: true/false
+    influence_conversation: false
   pizza_amount:
     type: list
-    influence_conversation: true/false
+    influence_conversation: false
 
 actions:
 - action_pizza_order_form
